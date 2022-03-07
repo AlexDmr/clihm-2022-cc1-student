@@ -1,0 +1,42 @@
+$W: 20px;
+$H: 2px;
+
+table {
+  border-collapse: collapse;
+
+  td {
+    width: $W;
+    height: $W;
+    border: dashed black 1px;
+    text-align: center;
+    user-select: none;
+  }
+
+  td.selected {
+    background-color: aquamarine;
+  }
+
+  td.top {
+    border-top: solid black $H;
+  }
+
+  td.bottom {
+    border-bottom: solid black $H;
+  }
+
+  td.left {
+    border-left: solid black $H;
+  }
+
+  td.right {
+    border-right: solid black $H;
+  }
+
+}
+
+table.values {
+    td {
+        border: solid black 0.5px;
+    }
+    
+}

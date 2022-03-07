@@ -1,0 +1,11 @@
+<button (click)="displayComputeIA()">START computation</button>
+<div >
+    <div *ngFor="let R of LTR | async" style="position: relative;">
+        <span [ngStyle]="style(R)"></span>
+        <label>{{R[0]}}</label>
+    </div>
+</div>
+<!--
+<pre>start: {{start}}</pre>
+<pre>{{LTR | async | json}}</pre>
+-->
